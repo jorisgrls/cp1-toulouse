@@ -10,8 +10,15 @@ sumArr( ["2", "7", "3"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "12"]
 sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) doit renvoyer ["4", "11", "12", "8", "2"]
 */
 
-function sumArr(arrayA, arrayB) {
-  // Your code here !
+function sumArr(arrayA, arrayB) {  
+  //return arrayA.map((value, index) => parseInt(value) + parseInt(arrayB[index]));
+  let totalArray = [];
+  const totalLength =  Math.max(arrayA.length, arrayB.length);
+  for (let i = 0; i < totalLength; i++) {
+      totalArray[i] = (parseInt(arrayA[i] || 0) + parseInt(arrayB[i] || 0)).toString();
+  }
+  return totalArray;
 }
+
 
 module.exports = sumArr;
