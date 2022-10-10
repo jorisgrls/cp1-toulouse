@@ -111,6 +111,25 @@ p {
   border-radius:5px;
 }
 
+.add-devtools-form{
+  display:flex;
+  gap:10px;
+  width:100%;
+  justify-content: center;
+}
+
+.add-devtools-form input{
+  padding:0.75rem 0.3rem;
+  
+}
+
+.add-devtools-form input[type="submit"]{
+  color:white;
+  background-color:plum;
+  border:white;
+  border-radius:5px;
+}
+
 @media screen and (min-width:700px){
   .skills{
     flex-direction:row-reverse;
